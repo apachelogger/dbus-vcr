@@ -1,0 +1,2338 @@
+---
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 31
+    signature: s
+    serial: 3
+    params:
+    - org.freedesktop.PackageKit
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: GetAll
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 31
+    signature: s
+    serial: 4
+    params:
+    - org.freedesktop.PackageKit
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 3
+    params:
+    - ":1.474"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 4
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 160
+    signature: s
+    serial: 5
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/org/freedesktop/PackageKit',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 141
+    signature: s
+    serial: 6
+    params:
+    - type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0='org.freedesktop.PackageKit'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 31
+    signature: s
+    serial: 7
+    params:
+    - org.freedesktop.PackageKit
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 4
+    params:
+    - ":1.474"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 7
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 480
+    signature: a{sv}
+    serial: 14119
+    params:
+    - VersionMajor: 1
+      VersionMinor: 1
+      VersionMicro: 5
+      BackendName: aptcc
+      BackendDescription: APTcc
+      BackendAuthor: Daniel Nicoletti <dantti12@gmail.com>
+      Roles: 8438874110
+      Groups: 3906403580
+      Filters: 84152660
+      MimeTypes:
+      - application/vnd.debian.binary-package
+      - application/x-deb
+      Locked: false
+      NetworkState: 2
+      DistroId: neon;"16.04";x86_64
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 3
+    sender: ":1.474"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 8
+    params: []
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: CreateTransaction
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14120
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixUser
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 135
+    params:
+    - 1000
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14120
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 20
+    signature: o
+    serial: 14121
+    params:
+    - "/18455_caddaccc"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 8
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 170
+    signature: s
+    serial: 14122
+    params:
+    - type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0='org.freedesktop.PackageKit'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 136
+    params: []
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14122
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 31
+    signature: s
+    serial: 14123
+    params:
+    - org.freedesktop.PackageKit
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 137
+    params:
+    - ":1.474"
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14123
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 150
+    signature: s
+    serial: 14124
+    params:
+    - type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0=':1.488'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 138
+    params: []
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14124
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14125
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 139
+    params:
+    - ":1.488"
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14125
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 9
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18455_caddaccc',interface='org.freedesktop.PackageKit.Transaction',member='Destroy'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 43
+    signature: s
+    serial: 10
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: GetAll
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 148
+    signature: s
+    serial: 11
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18455_caddaccc',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 12
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18455_caddaccc',interface='org.freedesktop.PackageKit.Transaction',member='Package'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 33
+    signature: tas
+    serial: 13
+    params:
+    - 4
+    - - "/usr/bin/dolphin"
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: SearchFiles
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 288
+    signature: a{sv}
+    serial: 14126
+    params:
+    - Role: 0
+      Status: 1
+      LastPackage: ''
+      Uid: 1000
+      Percentage: 101
+      AllowCancel: true
+      CallerActive: true
+      ElapsedTime: 0
+      Speed: 0
+      DownloadSizeRemaining: 0
+      TransactionFlags: 0
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 10
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 68
+    signature: sa{sv}as
+    serial: 14127
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Role: 19
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 24
+    signature: as
+    serial: 14128
+    params:
+    - - "/18455_caddaccc"
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14129
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 101
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14130
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - ElapsedTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 80
+    signature: sa{sv}as
+    serial: 14131
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - RemainingTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 14132
+    params: []
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 13
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14133
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 2
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14134
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixProcessID
+    path: "/org/freedesktop/DBus/Bus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 140
+    params:
+    - 5716
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14134
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14135
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 27
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14136
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14137
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14138
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14139
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 50
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14140
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14141
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 4
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 97
+    signature: uss
+    serial: 14142
+    params:
+    - 1
+    - dolphin;4:16.12.3-0neon+16.04+build22;amd64;installed:neon-xenial-main
+    - file manager
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Package
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14143
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 18
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 14
+    params: []
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: CreateTransaction
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 15
+    params: []
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: CreateTransaction
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 8
+    signature: uu
+    serial: 14144
+    params:
+    - 1
+    - 426
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Finished
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: as
+    serial: 14145
+    params:
+    - []
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14146
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixUser
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 141
+    params:
+    - 1000
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14146
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 20
+    signature: o
+    serial: 14147
+    params:
+    - "/18456_cadbbdad"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 16
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18456_cadbbdad',interface='org.freedesktop.PackageKit.Transaction',member='Destroy'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14148
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixUser
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 142
+    params:
+    - 1000
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14148
+    sender: org.freedesktop.DBus
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 43
+    signature: s
+    serial: 17
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: GetAll
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 148
+    signature: s
+    serial: 18
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18456_cadbbdad',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 146
+    signature: s
+    serial: 19
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18456_cadbbdad',interface='org.freedesktop.PackageKit.Transaction',member='Finished'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 20
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18456_cadbbdad',interface='org.freedesktop.PackageKit.Transaction',member='Package'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 31
+    signature: tas
+    serial: 21
+    params:
+    - 8
+    - - dolphin-dbgsym
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: SearchNames
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 20
+    signature: o
+    serial: 14149
+    params:
+    - "/18457_aedbaced"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 15
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14150
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 143
+    params:
+    - ":1.488"
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14150
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14151
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 144
+    params:
+    - ":1.488"
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14151
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 288
+    signature: a{sv}
+    serial: 14152
+    params:
+    - Role: 0
+      Status: 1
+      LastPackage: ''
+      Uid: 1000
+      Percentage: 101
+      AllowCancel: true
+      CallerActive: true
+      ElapsedTime: 0
+      Speed: 0
+      DownloadSizeRemaining: 0
+      TransactionFlags: 0
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 17
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 22
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18457_aedbaced',interface='org.freedesktop.PackageKit.Transaction',member='Destroy'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 43
+    signature: s
+    serial: 23
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: GetAll
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 148
+    signature: s
+    serial: 24
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18457_aedbaced',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 146
+    signature: s
+    serial: 25
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18457_aedbaced',interface='org.freedesktop.PackageKit.Transaction',member='Finished'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 145
+    signature: s
+    serial: 26
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/18457_aedbaced',interface='org.freedesktop.PackageKit.Transaction',member='Package'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: AddMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 28
+    signature: tas
+    serial: 27
+    params:
+    - 8
+    - - dolphin-dbg
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: SearchNames
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 68
+    signature: sa{sv}as
+    serial: 14153
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Role: 21
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 24
+    signature: as
+    serial: 14154
+    params:
+    - - "/18456_cadbbdad"
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14155
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 101
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14156
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - ElapsedTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 80
+    signature: sa{sv}as
+    serial: 14157
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - RemainingTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 14158
+    params: []
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 21
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 288
+    signature: a{sv}
+    serial: 14159
+    params:
+    - Role: 0
+      Status: 1
+      LastPackage: ''
+      Uid: 1000
+      Percentage: 101
+      AllowCancel: true
+      CallerActive: true
+      ElapsedTime: 0
+      Speed: 0
+      DownloadSizeRemaining: 0
+      TransactionFlags: 0
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 23
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 68
+    signature: sa{sv}as
+    serial: 14160
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Role: 21
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 44
+    signature: as
+    serial: 14161
+    params:
+    - - "/18456_cadbbdad"
+      - "/18457_aedbaced"
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14162
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 101
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14163
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - ElapsedTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 80
+    signature: sa{sv}as
+    serial: 14164
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - RemainingTime: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 14165
+    params: []
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 27
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14166
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 2
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14167
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixProcessID
+    path: "/org/freedesktop/DBus/Bus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 145
+    params:
+    - 5716
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14167
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14168
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 27
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14169
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14170
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14171
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14172
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 50
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14173
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14174
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 4
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14175
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 101
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14176
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14177
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 18
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 8
+    signature: uu
+    serial: 14178
+    params:
+    - 1
+    - 347
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Finished
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 24
+    signature: as
+    serial: 14179
+    params:
+    - - "/18457_aedbaced"
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14180
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 2
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14181
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixProcessID
+    path: "/org/freedesktop/DBus/Bus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 146
+    params:
+    - 5716
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14181
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14182
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 27
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14183
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14184
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14185
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 0
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14186
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 50
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14187
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14188
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 4
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14189
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 101
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 102
+    signature: uss
+    serial: 14190
+    params:
+    - 2
+    - dolphin-dbg;4:15.12.3-0ubuntu1;amd64;ubuntu-xenial-universe
+    - debugging symbols for Dolphin
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Package
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 102
+    signature: uss
+    serial: 14191
+    params:
+    - 2
+    - dolphin-dbg;4:15.12.3-0ubuntu1;i386;ubuntu-xenial-universe
+    - debugging symbols for Dolphin
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Package
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14192
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Percentage: 100
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 72
+    signature: sa{sv}as
+    serial: 14193
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - Status: 18
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 8
+    signature: uu
+    serial: 14194
+    params:
+    - 1
+    - 362
+    destination: 
+    interface: org.freedesktop.PackageKit.Transaction
+    error_name: 
+    member: Finished
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: as
+    serial: 14195
+    params:
+    - []
+    destination: 
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: TransactionListChanged
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :client
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 0
+    signature: ''
+    serial: 28
+    params: []
+    destination: org.freedesktop.PackageKit
+    interface: org.freedesktop.PackageKit
+    error_name: 
+    member: CreateTransaction
+    path: "/org/freedesktop/PackageKit"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 1
+    protocol: 1
+    body_length: 160
+    signature: s
+    serial: 29
+    params:
+    - type='signal',sender='org.freedesktop.PackageKit',path='/org/freedesktop/PackageKit',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: RemoveMatch
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.488"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14196
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetConnectionUnixUser
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 4
+    signature: u
+    serial: 147
+    params:
+    - 1000
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14196
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 20
+    signature: o
+    serial: 14197
+    params:
+    - "/18458_eebebead"
+    destination: ":1.488"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 28
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 1
+    flags: 0
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 14198
+    params:
+    - ":1.488"
+    destination: org.freedesktop.DBus
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: GetNameOwner
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 2
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 148
+    params:
+    - ":1.488"
+    destination: ":1.474"
+    interface: 
+    error_name: 
+    member: 
+    path: 
+    reply_serial: 14198
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 11
+    signature: s
+    serial: 6
+    params:
+    - ":1.488"
+    destination: ":1.488"
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: NameLost
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 29
+    signature: sss
+    serial: 149
+    params:
+    - ":1.488"
+    - ":1.488"
+    - ''
+    destination: 
+    interface: org.freedesktop.DBus
+    error_name: 
+    member: NameOwnerChanged
+    path: "/org/freedesktop/DBus"
+    reply_serial: 
+    sender: org.freedesktop.DBus
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14199
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - CallerActive: false
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18455_caddaccc"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14200
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - CallerActive: false
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18456_cadbbdad"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14201
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - CallerActive: false
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18457_aedbaced"
+    reply_serial: 
+    sender: ":1.474"
+- :type: :server
+  :msg: !ruby/object:DBus::Message
+    message_type: 4
+    flags: 1
+    protocol: 1
+    body_length: 76
+    signature: sa{sv}as
+    serial: 14202
+    params:
+    - org.freedesktop.PackageKit.Transaction
+    - CallerActive: false
+    - []
+    destination: 
+    interface: org.freedesktop.DBus.Properties
+    error_name: 
+    member: PropertiesChanged
+    path: "/18458_eebebead"
+    reply_serial: 
+    sender: ":1.474"
