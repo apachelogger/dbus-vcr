@@ -5,7 +5,7 @@ require 'yaml'
 
 $DEBUG = true
 
-data = YAML.load_file("#{__dir__}/recording")
+data = YAML.load_file("#{__dir__}/cassette.yml")
 
 $data = data
 $client_data = $data.select { |x| x.fetch(:type) == :client }
@@ -25,12 +25,9 @@ module Interceptor
     #   excess offset divergence can cause reply syncness to get lost if
     #   a request and its reply are far apart (i.e. between the two are
     #   ther requests with different offset values).
-    @serial_offset = m2.serial - m1.serial
-    puts "serial #{(m1.serial + @serial_offset)} vs #{m2.serial} (#{@serial_offset})"
     m1.interface == m2.interface &&
       m1.params == m2.params &&
-      m1.member == m2.member &&
-      (m1.serial + @serial_offset) == m2.serial
+      m1.member == m2.member
   end
 
   # Override standard message handling. Foreach incoming message we'll check
@@ -42,20 +39,35 @@ module Interceptor
       # Random crap calls from dbus itself, supposedly because we register.
       return super(m)
     end
-    expected = $data[0]
-    raise "Not expected #{m.inspect}" unless compat?(expected.fetch(:msg), m)
+    expected = $data[0].fetch(:msg)
+    raise "Not expected #{m.inspect}" unless compat?(expected, m)
+
+    # Track all serials. When we reply to a request we need to reference the
+    # client's serial so the client knows what we replied to. BUT!
+    # The serial is not consistent across runs and also not consistent between
+    # playback runs. One additional client-side message and the serial is off.
+    # To compensate we establish a fixed map of the client serials and the
+    # serial of the recorded expectation. Later when replying we can then map
+    # the recorded reply_serial to the reply_serial we need to actually make
+    # it work.
+    @client_reply_translator ||= {}
+    @client_reply_translator[expected.serial] = m.serial
+
     $data.shift
     while $data[0] && $data[0].fetch(:type) != :client
       x = $data.shift.fetch(:msg)
       next if x.sender == 'org.freedesktop.DBus' # FIXME bogus recording
       next if x.destination == 'org.freedesktop.DBus' # FIXME bogus recording
 
+      puts "           pushing ==>>> "
+      p x
+
       new_message = DBus::Message.new(x.message_type)
       new_message.path = x.path
       new_message.interface = x.interface
       new_message.member = x.member
       new_message.error_name = x.error_name
-      new_message.destination = m.sender if x.destination
+      new_message.destination = m.sender
       unless x.params.empty?
         params = x.params.dup
         DBus::Type::Parser.new(x.signature).parse.each do |t|
@@ -65,14 +77,15 @@ module Interceptor
         new_message.signature = x.signature
       end
       # .sender auto-set
-      new_message.reply_serial = x.reply_serial + @serial_offset if x.reply_serial
+      if x.reply_serial
+        new_message.reply_serial = @client_reply_translator.fetch(x.reply_serial)
+      end
 
-      puts "pushing"
-      p x
       p new_message
       @message_queue.push(new_message)
     end
     exit 0 if $data.empty?
+    puts "        -_- Zzzzz"
     puts "now waiting for #{$data[0]}"
   end
 end
